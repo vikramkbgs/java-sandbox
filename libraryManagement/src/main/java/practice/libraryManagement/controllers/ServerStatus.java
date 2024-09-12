@@ -12,11 +12,6 @@ import io.swagger.v3.oas.annotations.responses.ApiResponses;
 public class ServerStatus {
 
     @GetMapping
-    @Operation(summary = "Find book by ID", description = "Returns a book as per the ID")
-    @ApiResponses(value = {
-            @ApiResponse(responseCode = "200", description = "Book found"),
-            @ApiResponse(responseCode = "404", description = "Book not found")
-    })
     public String server(){
         return "Server is live...";
     }
